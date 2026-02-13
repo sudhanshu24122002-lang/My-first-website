@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://sudhanshu24122002-lang.github.io/My-first-website/");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 * {
   outline: none;
 }
@@ -11,7 +11,6 @@
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
-
 html,
 body {
   -webkit-box-sizing: border-box;
@@ -169,11 +168,11 @@ h3 {
 }
 .resume .base .follow .box a:hover i {
   background: #fdd835;
-  border-radius: 5px;
-  transform: rotate(45deg) scale(0.8);
+  border-radius: 12px;
+  transform: scale(1.1);
 }
 .resume .base .follow .box a:hover i::before {
-  transform: rotate(-45deg) scale(1.5);
+  transform: none;
 }
 .resume .base .follow .box i {
   display: inline-block;
@@ -193,6 +192,11 @@ h3 {
 .resume .base .follow .box i.fa::before {
   display: block;
 }
+i.fa-brands {
+  color: white;
+  font-size: 30px;
+}
+
 .resume .func {
   width: 100%;
   padding: 30px;
@@ -404,20 +408,23 @@ h3 {
 }
 .resume .func .interests-items {
   box-sizing: border-box;
-  padding: 0 0 15px;
+  padding: 0 0 20px;
   width: 100%;
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .resume .func .interests-items div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #1a237e;
+  border: 3px solid #ffb300;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  transition: 0.3s;
 }
 .resume .func .interests-items div:hover i {
   transform: scale(1.2);
@@ -433,7 +440,14 @@ h3 {
   line-height: 60px;
   color: #ffb300;
   transition-duration: 0.3s;
+  margin-bottom:6px;
 }
 .resume .func .interests-items div span {
-  display: block;
+  font-size:14px;
+  color:#ffffff;
+  transition-duration: 0.3s;
+}
+.resume .func .interests-items div:hover {
+  transform: scale(1.1);
+  background: #283593;
 }
